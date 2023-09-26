@@ -41,7 +41,7 @@ svg {
   margin: 0;
   list-style: none;
 }
-.subtitle {
+.section__title {
   margin: 0;
   font-size: 36px;
   font-weight: 700;
@@ -99,7 +99,7 @@ svg {
   width: 20px;
   height: 20px;
 }
-.socialIcons {
+.social-media {
   width: 40px;
   height: 40px;
   padding: 10px;
@@ -110,7 +110,7 @@ svg {
   justify-content: center;
   transition: var(--social-transition);
 }
-.socialIcons:hover {
+.social-media:hover {
   color: white;
   background-color: var(--selected-color);
 }
@@ -467,26 +467,26 @@ svg {
 /* Values */
 
 /* ABOUT */
-.object {
+.about {
   gap: 50px;
   display: flex;
   flex-direction: column;
 }
-.about {
+.about__list {
   gap: 30px;
   padding: 0;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
 }
-.aboutImg {
+.about__img {
   display: flex;
   position: relative;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.aboutText {
+.about__topic {
   margin: 0;
   bottom: 0;
   width: 100%;
@@ -509,12 +509,12 @@ svg {
 .team {
   background-color: rgb(245, 244, 250);
 }
-.members {
+.team__members {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
-.teamMember {
+.member__card {
   gap: 50px;
   padding: 0;
   border-radius: 0px 0px 4px 4px;
@@ -525,7 +525,26 @@ svg {
   display: flex;
   flex-direction: column;
 }
-.teamName {
+.member__card {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.member__card__photo{
+  width: 270px;
+  height:260px;
+}
+.member__information {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.information__box {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.member__name {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
@@ -533,7 +552,7 @@ svg {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.teamJob {
+.member__job {
   margin: 0;
   font-size: 16px;
   line-height: 1.19;
@@ -541,22 +560,7 @@ svg {
   color: rgb(117, 117, 117);
   text-align: center;
 }
-.memberCard {
-  gap: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.teamContent {
-  gap: 16px;
-  display: flex;
-  flex-direction: column;
-}
-.contentText {
-  gap: 10px;
-  display: flex;
-  flex-direction: column;
-}
-.teamSocial {
+.member__social-media {
   gap: 10px;
   padding: 0px 32px 30px;
   display: flex;
@@ -719,7 +723,7 @@ svg {
   display: flex;
   flex-direction: column;
 }
-.footerSocialIcons {
+.footersocial-media {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .detailList {
