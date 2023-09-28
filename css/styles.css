@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --main-color: rgb(33, 33, 33);
-  --selected-color: rgb(33, 150, 243);
+  --text-color: rgb(33, 33, 33);
+  --format-color: rgb(33, 150, 243);
   --background-color: rgb(47, 48, 58, 1);
   --social-media__icon-color: rgba(175, 177, 184, 1);
-  --backgroundbutton-color: rgb(245, 244, 250, 1);
+  --background-button-color: rgb(245, 244, 250, 1);
   --main-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
@@ -15,7 +15,7 @@
   --link-transition: color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 body {
-  color: var(--main-color);
+  color: var(--text-color);
   font-family: var(--main-font);
 }
 a {
@@ -30,7 +30,6 @@ svg {
   padding: 0;
 }
 .container {
-  padding: 0;
   max-width: 1200px;
   margin: auto;
 }
@@ -77,8 +76,8 @@ svg {
 .menu__item:focus,
 .menu__item__contact:hover,
 .menu__item__contact:focus {
-  color: var(--selected-color);
-  fill: var(--selected-color);
+  color: var(--format-color);
+  fill: var(--format-color);
 }
 .section__list {
   gap: 10px;
@@ -113,7 +112,7 @@ svg {
 }
 .social-media:hover {
   color: white;
-  background-color: var(--selected-color);
+  background-color: var(--format-color);
 }
 
 /* LOGO */
@@ -127,10 +126,10 @@ svg {
   letter-spacing: 0.03em;
 }
 .logo--color1 {
-  color: var(--selected-color);
+  color: var(--format-color);
 }
 .logo--color2 {
-  color: var(--main-color);
+  color: var(--text-color);
 }
 .logo--color3 {
   color: white;
@@ -158,7 +157,7 @@ svg {
   align-items: center;
 }
 .current {
-  color: var(--selected-color);
+  color: var(--format-color);
 }
 .current::after {
   content: '';
@@ -168,7 +167,7 @@ svg {
   display: inline-block;
   width: 100%;
   height: 4px;
-  background-color: var(--selected-color);
+  background-color: var(--format-color);
   border-radius: 2px;
 }
 .menu__item {
@@ -182,7 +181,6 @@ svg {
   transition: var(--link-transition);
   align-items: center;
 }
-
 .menu__item__contact {
   color: rgb(117, 117, 117);
   fill: rgb(117, 117, 117);
@@ -200,11 +198,7 @@ svg {
   width: 16px;
   height: 12px;
 }
-
-/* HEADER */
-
 /* INDEX */
-
 /* MAIN */
 .main {
   height: 600px;
@@ -236,7 +230,7 @@ svg {
   border-radius: 4px;
   padding: 10px 32px;
   letter-spacing: 0.06em;
-  background-color: var(--selected-color);
+  background-color: var(--format-color);
   border: none;
   margin: auto;
   cursor: pointer;
@@ -278,7 +272,6 @@ svg {
   flex-direction: column;
 }
 /* Values */
-
 /* ABOUT */
 .about {
   gap: 50px;
@@ -329,7 +322,6 @@ svg {
 }
 .members__card {
   gap: 50px;
-  padding: 0;
   border-radius: 0px 0px 4px 4px;
   flex-basis: calc((100% - 3 * 10px) / 4);
   background-color: rgb(255, 255, 255, 1);
@@ -343,9 +335,9 @@ svg {
   display: flex;
   flex-direction: column;
 }
-.members__card__photo{
+.members__card__photo {
   width: 270px;
-  height:260px;
+  height: 260px;
 }
 .members__card__information {
   gap: 16px;
@@ -403,11 +395,11 @@ svg {
   border: 1px solid rgba(175, 177, 184, 1);
 }
 .clients__item:hover {
-  border: 1px solid var(--selected-color);
+  border: 1px solid var(--format-color);
   cursor: pointer;
 }
 .clients__item:hover svg {
-  fill: var(--selected-color);
+  fill: var(--format-color);
   cursor: pointer;
 }
 .clients__item__logo {
@@ -461,7 +453,7 @@ svg {
 }
 .close__button:hover,
 .close__button:focus {
-  fill: var(--selected-color);
+  fill: var(--format-color);
 }
 .modal__form {
   display: flex;
@@ -513,8 +505,8 @@ svg {
 .format__imput:focus-within,
 .format__imput:focus + .formIcon,
 .format__imput:focus-within + .format__icon {
-  fill: var(--selected-color);
-  border-color: var(--selected-color);
+  fill: var(--format-color);
+  border-color: var(--format-color);
 }
 .format__review {
   border: solid 1px rgba(33, 33, 33, 0.2);
@@ -531,7 +523,7 @@ svg {
 }
 .format__review:focus,
 .format__review:focus-within {
-  border-color: var(--selected-color);
+  border-color: var(--format-color);
 }
 .format__terms {
   display: flex;
@@ -543,8 +535,8 @@ svg {
   cursor: pointer;
 }
 
-.format__terms:hover .checkboxUnchecked {
-  fill: var(--secondary-font);
+.format__terms:hover .check-box--unchecked {
+  fill: var(--format-color);
 }
 .check {
   width: 16px;
@@ -554,26 +546,26 @@ svg {
   top: 8%;
   transform: translateY(-8%);
 }
-.checkboxChecked {
-  background-color: var(--selected-color);
+.check-box--checked {
+  background-color: var(--format-color);
   fill: white;
   opacity: 0;
   visibility: hidden;
 }
-.checkboxUnchecked {
+.check-box--unchecked {
   opacity: 1;
   visibility: visible;
 }
 
-.checkbox:checked ~ .checkboxUnchecked {
+.check-box:checked ~ .check-box--unchecked {
   opacity: 0;
   visibility: hidden;
 }
-.checkbox:checked ~ .checkboxChecked {
+.check-box:checked ~ .check-box--checked {
   opacity: 1;
   visibility: visible;
 }
-.formCheckInfo {
+.format__information {
   width: 400px;
   color: rgba(117, 117, 117, 1);
   letter-spacing: 0.03em;
@@ -582,7 +574,7 @@ svg {
   line-height: 1.7;
   margin: 0;
 }
-.formButton {
+.format__button {
   color: white;
   font-size: 16px;
   font-weight: 700;
@@ -590,56 +582,56 @@ svg {
   border-radius: 4px;
   padding: 10px 75px;
   letter-spacing: 0.06em;
-  background-color: var(--selected-color);
+  background-color: var(--format-color);
   border: none;
   margin: auto;
   cursor: pointer;
   transition: var(--shadow-transition);
 }
-.formButton:hover,
-.formButton:focus,
-.formButton:active {
+.format__button:hover,
+.format__button:focus,
+.format__button:active {
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 /* -INDEX */
 
-/* PORTAFOLIO */
+/* portfolio */
 .filter {
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.filterList {
+.filter__list {
   gap: 8px;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.filterClass {
+.filter__class {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   padding: 6px 24px;
   border-radius: 4px;
   letter-spacing: 0.03em;
-  background-color: var(--backgroundbutton-color);
+  background-color: var(--background-button-color);
   transition: var(--shadow-transition), background-color 250ms var(--cubic);
   cursor: pointer;
   border-style: hidden;
 }
-.filterClass:hover,
-.filterClass:focus,
-.filterClass:active,
-.filterCurrent {
+.filter__class:hover,
+.filter__class:focus,
+.filter__class:active,
+.filter--current {
   color: white;
-  background-color: var(--selected-color);
+  background-color: var(--format-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
     0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-.product {
+.portfolio__item {
   width: 370px;
   border-radius: 0px 0px 4px 4px;
   border: 1px solid rgb(238, 238, 238);
@@ -650,21 +642,21 @@ svg {
   flex-wrap: nowrap;
   flex-direction: column;
 }
-.product:hover,
-.product:focus,
-.product:hover > .imgContainer > .imgText {
+.portfolio__item:hover,
+.portfolio__item:focus,
+.portfolio__item:hover > .portfolio__item__img > .img__text {
   transform: translateY(0);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-.productName {
+.portfolio__item__name {
   margin: 0;
   line-height: 2;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.06em;
 }
-.portafolioCard {
+.portfolio__list {
   gap: 30px;
   padding: 0;
   display: flex;
@@ -672,19 +664,19 @@ svg {
   flex-direction: row;
 }
 
-.cardContent {
+.portfolio__item__content {
   gap: 4px;
   padding: 24px 18px;
   display: flex;
   flex-direction: column;
 }
 
-.imgContainer {
+.portfolio__item__img {
   display: flex;
   position: relative;
   overflow: hidden;
 }
-.imgText {
+.img__text {
   color: white;
   font-family: var(--main-font);
   font-size: 18px;
@@ -703,7 +695,7 @@ svg {
   padding: 63px 24px;
   transition: transform 250ms var(--cubic);
 }
-/* PORTAFOLIO */
+/* portfolio */
 
 /* BODY- */
 
@@ -773,7 +765,7 @@ svg {
   height: 50px;
 }
 .subscription__button {
-  background-color: var(--selected-color);
+  background-color: var(--format-color);
   width: 200px;
   height: 50px;
   border-style: none;

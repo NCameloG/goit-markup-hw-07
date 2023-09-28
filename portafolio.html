@@ -21,10 +21,10 @@
           >
           <div class="header__navigation">
             <ul class="list navigation__menu">
-              <li class="link menu__item current">
+              <li class="link menu__item">
                 <a href="./index.html">Estudio</a>
               </li>
-              <li class="link menu__item">
+              <li class="link menu__item current">
                 <a href="./portafolio.html">Portafolio</a>
               </li>
               <li class="link menu__item"><a href="#">Contactos</a></li>
@@ -51,152 +51,155 @@
         </nav>
       </div>
     </header>
+    <!-- Main -->
     <main>
       <section id="shop" class="container section">
         <div class="filter">
-          <ul class="list filterList">
-            <li class="filterButton">
-              <button type="button" class="filterClass filterCurrent">Todo</button>
+          <ul class="list filter__list">
+            <li class="filter__button">
+              <button type="button" class="filter__class filter--current">Todo</button>
             </li>
-            <li class="filterButton">
-              <button type="button" class="filterClass">Sitios-web</button>
+            <li class="filter__button">
+              <button type="button" class="filter__class">Sitios-web</button>
             </li>
-            <li class="filterButton">
-              <button type="button" class="filterClass">Aplicaciones</button>
+            <li class="filter__button">
+              <button type="button" class="filter__class">Aplicaciones</button>
             </li>
-            <li class="filterButton"><button type="button" class="filterClass">Diseño</button></li>
-            <li class="filterButton">
-              <button type="button" class="filterClass">Marketing</button>
+            <li class="filter__button">
+              <button type="button" class="filter__class">Diseño</button>
+            </li>
+            <li class="filter__button">
+              <button type="button" class="filter__class">Marketing</button>
             </li>
           </ul>
-          <h1 class="invisible">PORTAFOLIO</h1>
+          <h1 class="invisible">portafolio</h1>
         </div>
-        <div class="portafolio">
-          <ul class="list portafolioCard">
-            <li class="product">
-              <div class="imgContainer">
-                <img src="./images/Portafolio/tecnoduck.jpg" alt="Tecnoduck" class="img" />
-                <p class="imgText">
+        <div class="portfolio">
+          <ul class="list portfolio__list">
+            <li class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="./images/portafolio/tecnoduck.jpg" alt="Tecnoduck" class="img" />
+                <p class="img__text">
                   Tecnoduck es una plataforma de distribución de coronavirus de última generación.
                   Las compañías usan esta plataforma para el espionaje digital y los ataques a los
                   servidores seguros de la competencia.
                 </p>
               </div>
-              <div class="cardContent">
-                <h3 class="productName">Tecnoduck</h3>
-                <p class="information__description">Sitio-web</p>
+              <div class="portfolio__item__content">
+                <h3 class="portfolio__item__name">Tecnoduck</h3>
+                <p class="portfolio__item__description">Sitio-web</p>
               </div>
             </li>
-            <li class="product">
-              <div class="imgContainer">
-                <img src="./images/Portafolio/poster.jpg" alt="Poster" class="img" />
-                <p class="imgText">
+            <li class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="./images/portafolio/poster.jpg" alt="Poster" class="img" />
+                <p class="img__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim architecto
                   corporis rem eligendi quam qui omnis corrupti, ad placeat quibusdam animi,
                   recusandae odit culpa? Eaque culpa ab.
                 </p>
               </div>
-              <div class="cardContent">
-                <h3 class="productName">Póster de Nueva Orleans vs Estrella Dorada</h3>
-                <p class="information__description">Diseño</p>
+              <div class="portfolio__item__content">
+                <h3 class="portfolio__item__name">Póster de Nueva Orleans vs Estrella Dorada</h3>
+                <p class="portfolio__item__description">Diseño</p>
               </div>
             </li>
-            <li class="product">
-              <div class="imgContainer">
-                <img src="./images/Portafolio/restaurante.jpg" alt="Restaurante" class="img" />
-                <p class="imgText">
+            <li class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="./images/portafolio/restaurante.jpg" alt="Restaurante" class="img" />
+                <p class="img__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim architecto
                   corporis rem eligendi quam qui omnis corrupti, ad placeat quibusdam animi,
                   recusandae odit culpa? Eaque culpa ab.
                 </p>
               </div>
-              <div class="cardContent">
-                <h3 class="productName">Restaurante de Mariscos</h3>
-                <p class="information__description">Aplicaciones</p>
+              <div class="portfolio__item__content">
+                <h3 class="portfolio__item__name">Restaurante de Mariscos</h3>
+                <p class="portfolio__item__description">Aplicaciones</p>
               </div>
             </li>
-            <li class="product">
-              <div class="imgContainer">
-                <img src="./images/Portafolio/prime.jpg" alt="Prime" class="img" />
-                <p class="imgText">
+            <li class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="./images/portafolio/prime.jpg" alt="Prime" class="img" />
+                <p class="img__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim architecto
                   corporis rem eligendi quam qui omnis corrupti, ad placeat quibusdam animi,
                   recusandae odit culpa? Eaque culpa ab.
                 </p>
               </div>
-              <div class="cardContent">
-                <h3 class="productName">Proyecto Prime</h3>
-                <p class="information__description">Marketing</p>
+              <div class="portfolio__item__content">
+                <h3 class="portfolio__item__name">Proyecto Prime</h3>
+                <p class="portfolio__item__description">Marketing</p>
               </div>
             </li>
-            <li class="product">
-              <div class="imgContainer">
-                <img src="./images/Portafolio/cajas.jpg" alt="Cajas" class="img" />
-                <p class="imgText">
+            <li class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="./images/portafolio/cajas.jpg" alt="Cajas" class="img" />
+                <p class="img__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim architecto
                   corporis rem eligendi quam qui omnis corrupti, ad placeat quibusdam animi,
                   recusandae odit culpa? Eaque culpa ab.
                 </p>
               </div>
-              <div class="cardContent">
-                <h3 class="productName">Proyecto Cajas</h3>
-                <p class="information__description">Aplicaciones</p>
+              <div class="portfolio__item__content">
+                <h3 class="portfolio__item__name">Proyecto Cajas</h3>
+                <p class="portfolio__item__description">Aplicaciones</p>
               </div>
             </li>
-            <li class="product">
-              <div class="imgContainer">
-                <img src="./images/Portafolio/inspiracion.jpg" alt="Inspiracion" class="img" />
-                <p class="imgText">
+            <li class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="./images/portafolio/inspiracion.jpg" alt="Inspiracion" class="img" />
+                <p class="img__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim architecto
                   corporis rem eligendi quam qui omnis corrupti, ad placeat quibusdam animi,
                   recusandae odit culpa? Eaque culpa ab.
                 </p>
               </div>
-              <div class="cardContent">
-                <h3 class="productName">La inspiración no tiene límites</h3>
-                <p class="information__description">Sitio-web</p>
+              <div class="portfolio__item__content">
+                <h3 class="portfolio__item__name">La inspiración no tiene límites</h3>
+                <p class="portfolio__item__description">Sitio-web</p>
               </div>
             </li>
-            <li class="product">
-              <div class="imgContainer">
-                <img src="./images/Portafolio/edicion.jpg" alt="Edicion" class="img" />
-                <p class="imgText">
+            <li class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="./images/portafolio/edicion.jpg" alt="Edicion" class="img" />
+                <p class="img__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim architecto
                   corporis rem eligendi quam qui omnis corrupti, ad placeat quibusdam animi,
                   recusandae odit culpa? Eaque culpa ab.
                 </p>
               </div>
-              <div class="cardContent">
-                <h3 class="productName">Edición Limitada</h3>
-                <p class="information__description">Diseño</p>
+              <div class="portfolio__item__content">
+                <h3 class="portfolio__item__name">Edición Limitada</h3>
+                <p class="portfolio__item__description">Diseño</p>
               </div>
             </li>
-            <li class="product">
-              <div class="imgContainer">
-                <img src="./images/Portafolio/lab.jpg" alt="Lab" class="img" />
-                <p class="imgText">
+            <li class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="./images/portafolio/lab.jpg" alt="Lab" class="img" />
+                <p class="img__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim architecto
                   corporis rem eligendi quam qui omnis corrupti, ad placeat quibusdam animi,
                   recusandae odit culpa? Eaque culpa ab.
                 </p>
               </div>
-              <div class="cardContent">
-                <h3 class="productName">Proyecto LAB</h3>
-                <p class="information__description">Marketing</p>
+              <div class="portfolio__item__content">
+                <h3 class="portfolio__item__name">Proyecto LAB</h3>
+                <p class="portfolio__item__description">Marketing</p>
               </div>
             </li>
-            <li class="product">
-              <div class="imgContainer">
-                <img src="./images/Portafolio/negocio.jpg" alt="Negocio" class="img" />
-                <p class="imgText">
+            <li class="portfolio__item">
+              <div class="portfolio__item__img">
+                <img src="./images/portafolio/negocio.jpg" alt="Negocio" class="img" />
+                <p class="img__text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim architecto
                   corporis rem eligendi quam qui omnis corrupti, ad placeat quibusdam animi,
                   recusandae odit culpa? Eaque culpa ab.
                 </p>
               </div>
-              <div class="cardContent">
-                <h3 class="productName">Negocio en Crecimiento</h3>
-                <p class="information__description">Aplicaciones</p>
+              <div class="portfolio__item__content">
+                <h3 class="portfolio__item__name">Negocio en Crecimiento</h3>
+                <p class="portfolio__item__description">Aplicaciones</p>
               </div>
             </li>
           </ul>
@@ -223,7 +226,9 @@
               </address>
             </li>
             <li>
-              <a href="mailto:info@devstudio.com" class="footer__contact link">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="footer__contact link"
+                >info@devstudio.com</a
+              >
             </li>
             <li><a href="tel:+525555296000" class="footer__contact link">+525 555 296 000</a></li>
           </ul>
@@ -267,7 +272,12 @@
             <form name="subForm" autocomplete="on" class="subFormat">
               <div>
                 <label for="mail"></label>
-                <input class="subscription__mail" type="email" id="mail" placeholder="Correo electrónico" />
+                <input
+                  class="subscription__mail"
+                  type="email"
+                  id="mail"
+                  placeholder="Correo electrónico"
+                />
               </div>
             </form>
             <a class="subscription__send" href="#">
