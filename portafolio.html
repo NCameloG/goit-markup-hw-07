@@ -20,16 +20,16 @@
             </a></span
           >
           <div class="header__navigation">
-            <ul class="list header__navigation__menu">
-              <li class="link menu__item">
+            <ul class="list navigation__menu">
+              <li class="link menu__item current">
                 <a href="./index.html">Estudio</a>
               </li>
-              <li class="link menu__item current">
+              <li class="link menu__item">
                 <a href="./portafolio.html">Portafolio</a>
               </li>
               <li class="link menu__item"><a href="#">Contactos</a></li>
             </ul>
-            <ul class="list header__navigation__menu">
+            <ul class="list navigation__menu">
               <li class="menu__item">
                 <a href="mailto:info@devstudio.com" class="link menu__item__contact">
                   <svg class="item__contact__icon2">
@@ -98,7 +98,7 @@
               </div>
               <div class="cardContent">
                 <h3 class="productName">Póster de Nueva Orleans vs Estrella Dorada</h3>
-                <p class=information__description>Diseño</p>
+                <p class="information__description">Diseño</p>
               </div>
             </li>
             <li class="product">
@@ -112,7 +112,7 @@
               </div>
               <div class="cardContent">
                 <h3 class="productName">Restaurante de Mariscos</h3>
-                <p class=information__description>Aplicaciones</p>
+                <p class="information__description">Aplicaciones</p>
               </div>
             </li>
             <li class="product">
@@ -126,7 +126,7 @@
               </div>
               <div class="cardContent">
                 <h3 class="productName">Proyecto Prime</h3>
-                <p class=information__description>Marketing</p>
+                <p class="information__description">Marketing</p>
               </div>
             </li>
             <li class="product">
@@ -140,7 +140,7 @@
               </div>
               <div class="cardContent">
                 <h3 class="productName">Proyecto Cajas</h3>
-                <p class=information__description>Aplicaciones</p>
+                <p class="information__description">Aplicaciones</p>
               </div>
             </li>
             <li class="product">
@@ -154,7 +154,7 @@
               </div>
               <div class="cardContent">
                 <h3 class="productName">La inspiración no tiene límites</h3>
-                <p class=information__description>Sitio-web</p>
+                <p class="information__description">Sitio-web</p>
               </div>
             </li>
             <li class="product">
@@ -168,7 +168,7 @@
               </div>
               <div class="cardContent">
                 <h3 class="productName">Edición Limitada</h3>
-                <p class=information__description>Diseño</p>
+                <p class="information__description">Diseño</p>
               </div>
             </li>
             <li class="product">
@@ -182,7 +182,7 @@
               </div>
               <div class="cardContent">
                 <h3 class="productName">Proyecto LAB</h3>
-                <p class=information__description>Marketing</p>
+                <p class="information__description">Marketing</p>
               </div>
             </li>
             <li class="product">
@@ -196,7 +196,7 @@
               </div>
               <div class="cardContent">
                 <h3 class="productName">Negocio en Crecimiento</h3>
-                <p class=information__description>Aplicaciones</p>
+                <p class="information__description">Aplicaciones</p>
               </div>
             </li>
           </ul>
@@ -204,71 +204,75 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container footerBox">
-        <div class="footerDetail">
-          <a href="./index.html" class="iconName">Web<span class="footerIconFull">Studio</span> </a>
-          <ul class="list detailList">
+      <div class="container footer__box">
+        <div class="footer__item">
+          <div class="logo">
+            <a href="./index.html" class="logo--color1"
+              >Web<span class="logo--color3">Studio</span>
+            </a>
+          </div>
+          <ul class="list footer__list">
             <li>
               <address>
                 <a
                   href="https://www.google.com/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102072,-99.1350661,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?hl=es&entry=ttu"
                   target="_blank"
-                  class="ubication link"
+                  class="footer__ubication link"
                   >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
                 >
               </address>
             </li>
             <li>
-              <a href="mailto:info@devstudio.com" class="footerContact link">info@devstudio.com</a>
+              <a href="mailto:info@devstudio.com" class="footer__contact link">info@devstudio.com</a>
             </li>
-            <li><a href="tel:+525555296000" class="footerContact link">+525 555 296 000</a></li>
+            <li><a href="tel:+525555296000" class="footer__contact link">+525 555 296 000</a></li>
           </ul>
         </div>
-        <div class="footerItems">
-          <h3 class="footerTitle">ENCUENTRENOS EN</h3>
-          <ul class="list socialList">
+        <div class="footer__item">
+          <h3 class="footer__subtitle">ENCUENTRENOS EN</h3>
+          <ul class="list social-media__list">
             <li>
               <a href="#" class="social-media footersocial-media">
-                <svg class="socialIcon">
+                <svg class="social-media__icon">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="social-media footersocial-media">
-                <svg class="socialIcon">
+                <svg class="social-media__icon">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="social-media footersocial-media">
-                <svg class="socialIcon">
+                <svg class="social-media__icon">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="social-media footersocial-media">
-                <svg class="socialIcon">
+                <svg class="social-media__icon">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footerItems">
-          <h3 class="footerTitle">Suscríbase al boletín informativo</h3>
-          <div class="subItems">
+        <div class="footer__item">
+          <h3 class="footer__subtitle">Suscríbase al boletín informativo</h3>
+          <div class="footer__subscription">
             <form name="subForm" autocomplete="on" class="subFormat">
               <div>
                 <label for="mail"></label>
-                <input class="subMail" type="email" id="mail" placeholder="Correo electrónico" />
+                <input class="subscription__mail" type="email" id="mail" placeholder="Correo electrónico" />
               </div>
             </form>
-            <a class="subSend" href="#">
-              <button type="button" class="subButton">Suscríbase</button>
-              <svg class="sendIcon">
+            <a class="subscription__send" href="#">
+              <button type="button" class="subscription__button">Suscríbase</button>
+              <svg class="subscription__icon">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </a>
