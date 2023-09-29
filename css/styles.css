@@ -4,6 +4,7 @@
 :root {
   --text-color: rgb(33, 33, 33);
   --format-color: rgb(33, 150, 243);
+  --tirth-color: rgb(117, 117, 117);
   --background-color: rgb(47, 48, 58, 1);
   --social-media__icon-color: rgba(175, 177, 184, 1);
   --background-button-color: rgb(245, 244, 250, 1);
@@ -61,7 +62,7 @@ svg {
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: rgb(117, 117, 117);
+  color: var(--tirth-color);
 }
 .link {
   font-size: 14px;
@@ -150,7 +151,7 @@ svg {
   display: flex;
   justify-content: space-between;
 }
-.navigation__menu {
+.header__menu {
   gap: 30px;
   padding: 0;
   display: flex;
@@ -170,7 +171,7 @@ svg {
   background-color: var(--format-color);
   border-radius: 2px;
 }
-.menu__item {
+.header__menu__item {
   position: relative;
   display: block;
   padding: 32px 0;
@@ -181,20 +182,20 @@ svg {
   transition: var(--link-transition);
   align-items: center;
 }
-.menu__item__contact {
-  color: rgb(117, 117, 117);
-  fill: rgb(117, 117, 117);
+.header__menu__item--contact {
+  color: var(--tirth-color);
+  fill: var(--tirth-color);
   gap: 10px;
   margin: auto;
   display: flex;
   align-items: center;
   align-content: center;
 }
-.item__contact__icon1 {
+.header__icon--phone {
   width: 10px;
   height: 16px;
 }
-.item__contact__icon2 {
+.header__icon--mail {
   width: 16px;
   height: 12px;
 }
@@ -362,7 +363,7 @@ svg {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: rgb(117, 117, 117);
+  color: var(--tirth-color);
   text-align: center;
 }
 .member__social-media {

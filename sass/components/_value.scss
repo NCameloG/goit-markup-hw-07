@@ -1,0 +1,29 @@
+/* Values */
+.value {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+&__item {
+  gap: 30px;
+  margin: 0;
+  display: flex;
+  flex-basis: calc((100% - 30px * 3) / 4);
+  align-items: flex-start;
+  flex-direction: column;
+}
+&__background {
+  border-radius: 4px;
+  padding: 25px 100px;
+  background: rgb(245, 244, 250);
+}
+&__icon {
+  width: 70px;
+  height: 70px;
+}
+&__information {
+  gap: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+}

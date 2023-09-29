@@ -1,0 +1,12 @@
+  $text-color: rgb(33, 33, 33);
+  $format-color: rgb(33, 150, 243);
+  $tirth-color: rgb(117, 117, 117);
+  $background-color: rgb(47, 48, 58, 1);
+  $social-media__icon-color: rgba(175, 177, 184, 1);
+  $background-button-color: rgb(245, 244, 250, 1);
+  $main-font: 'Roboto', sans-serif;
+  $secondary-font: 'Raleway', sans-serif;
+  $cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  $shadow-transition: box-shadow 250ms var($cubic);
+  $social-transition: color 250ms var($cubic), background-color 250ms var($cubic);
+  $link-transition: color 250ms var($cubic), fill 250ms var($cubic);

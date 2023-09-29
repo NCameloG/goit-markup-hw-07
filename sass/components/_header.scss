@@ -1,0 +1,65 @@
+// header
+.header {
+  border: 1px solid rgba(236, 236, 236, 1);
+
+&__box {
+  gap: 93px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+&__navigation {
+  gap: 306px;
+  display: flex;
+  justify-content: space-between;
+}
+&__menu {
+  gap: 30px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+}
+.current {
+  color: $format-color;
+
+&::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: $format-color;
+  border-radius: 2px;
+}
+}
+.header__menu__item {
+  position: relative;
+  display: block;
+  padding: 32px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  transition: $link-transition;
+  align-items: center;
+&--contact {
+  color: $tirth-color;
+  fill: $tirth-color;
+  gap: 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+}
+.header__icon--phone {
+  width: 10px;
+  height: 16px;
+}
+.header__icon--mail {
+  width: 16px;
+  height: 12px;
+}
