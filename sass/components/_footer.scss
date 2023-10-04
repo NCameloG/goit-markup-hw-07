@@ -1,0 +1,92 @@
+.footer {
+  padding: 45px;
+  background-color: $background-color;
+  &__box {
+    gap: 70px;
+    display: flex;
+  }
+  &__item {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__list {
+    gap: 9px;
+    padding: 0;
+    max-width: 231px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__social-media {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &__ubication {
+    display: flex;
+    color: white;
+  }
+  &__contact {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.21;
+    letter-spacing: 0.03em;
+    color: white;
+    margin: 0;
+  }
+  &__subscription {
+    display: flex;
+    gap: 12px;
+  }
+}
+.social-media__list {
+  gap: 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscription {
+  &__mail {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px 15px 16px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    color: white;
+  }
+  &__send {
+    position: relative;
+    width: 200px;
+    height: 50px;
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: rgba(255, 255, 255, 1);
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+}
+.subscription__button {
+  background-color: $format-color;
+  width: 200px;
+  height: 50px;
+  border-style: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  padding: 10px 72px 10px 39px;
+  transition: $shadow-transition;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+      0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+}

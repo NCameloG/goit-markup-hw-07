@@ -1,0 +1,96 @@
+.filter {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+&__list {
+  gap: 8px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+}
+.filter__class {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 6px 24px;
+  border-radius: 4px;
+  letter-spacing: 0.03em;
+  background-color: $background-button-color;
+  transition: $shadow-transition, background-color 250ms $cubic;
+  cursor: pointer;
+  border-style: hidden;
+&:hover,
+&:focus,
+&:active,
+.filter--current {
+  color: white;
+  background-color: $format-color;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+}
+.portfolio__item {
+  width: 370px;
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid rgb(238, 238, 238);
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  transition: box-shadow 250ms $cubic;
+  display: flex;
+  cursor: pointer;
+  flex-wrap: nowrap;
+  flex-direction: column;
+&:hover,
+&:focus,
+&:hover > .portfolio__item__img > .img__text {
+  transform: translateY(0);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+&__name {
+  margin: 0;
+  line-height: 2;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+&__content {
+  gap: 4px;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+}
+&__img {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+}
+.portfolio__list {
+  gap: 30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.img__text {
+  color: white;
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  position: absolute;
+  transform: translateY(100%);
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 63px 24px;
+  transition: transform 250ms $cubic;
+}
